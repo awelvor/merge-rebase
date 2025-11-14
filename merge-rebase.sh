@@ -18,3 +18,9 @@ export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 export GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE
 git commit --message="Empty" --allow-empty
 git log --oneline
+
+echo "content of A" > a.txt
+echo "content of B" > v.txt
+touch --date='01234567890' a.txt b.txt
+git checkout --quiet -b b
+git add b.txt
