@@ -16,8 +16,5 @@ export GIT_AUTHOR_DATE='1234567890 +0100'
 export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
 export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 export GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE
-echo "my content" > my-file.txt
-chmod 0644 my-file.txt
-touch --date='@1234567890' my-file.txt
-git add my-file.txt
-git commit --message="Initial version"
+git commit --message="Empty" --allow-empty
+git log --oneline
