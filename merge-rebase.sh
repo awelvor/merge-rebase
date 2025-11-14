@@ -21,6 +21,6 @@ git log --oneline
 
 echo "content of A" > a.txt
 echo "content of B" > v.txt
-touch --date='01234567890' a.txt b.txt
+touch --date='@1234567890' a.txt b.txt
 git checkout --quiet -b b
 git add b.txt
