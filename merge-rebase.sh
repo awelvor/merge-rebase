@@ -29,4 +29,4 @@ git checkout --quiet main
 git add a.txt
 git commit --quiet --message="Adding a.txt"
 git merge --quiet --message="Marging!" b
-git log --oneline--branches --graph
+git log --oneline --branches --graph
