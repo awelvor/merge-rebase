@@ -25,7 +25,7 @@ touch --date='@1234567890' a.txt b.txt
 git checkout --quiet -b b
 git add b.txt
 git commit --quiet --message="Adding b.txt"
-git checkout __quiet main
+git checkout --quiet main
 git add a.txt
 git commit --quiet --message="Adding a.txt"
 git merge --quiet --message="Marging!" b
